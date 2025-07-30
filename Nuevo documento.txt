@@ -1,0 +1,23 @@
+      const induction = await this.prisma.project.findFirst({
+        where: {
+          deleted_at: null,
+        },
+        select: {
+          id: true,
+          induction: true,
+          clientArea: true,
+        },
+      });
+
+
+Operación
+Unidad
+Placa
+Categoria
+Material
+Proveedor
+Marca
+Modelo
+Serie
+Cantidad
+Estado
